@@ -1,0 +1,13 @@
+*.
+*.swp
+*.bak
+*~
+*.~ml
+*.orig
+*.msi
+.DS_Store
+
+.settings
+.project
+
+target
