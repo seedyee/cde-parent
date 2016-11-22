@@ -9,5 +9,6 @@
 
 .settings
 .project
+*.iml
 
 target
