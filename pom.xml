@@ -30,7 +30,6 @@
     <spring.cloud.parent.version>Camden.RELEASE</spring.cloud.parent.version>
   </properties>
 
-
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
