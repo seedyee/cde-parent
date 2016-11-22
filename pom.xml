@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.2.RELEASE</version>
+    <relativePath />
+  </parent>
 
   <groupId>io.cde</groupId>
   <artifactId>cde-parent</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Cde Parent</name>
-  <description>This POM containts some global dependency and plugin configurations.</description>
+  <name>CDE Parent</name>
+  <description>This POM contains some global dependency and plugin configurations.</description>
   <url>https://github.com/seedyee/cde-parent</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
-    <spring.boot.version>1.4.2.RELEASE</spring.boot.version>
     <spring.data.mongodb.version>1.9.3.RELEASE</spring.data.mongodb.version>
     <jedis.client.version>2.8.2</jedis.client.version>
     <spring.cloud.parent.version>Camden.RELEASE</spring.cloud.parent.version>
   </properties>
 
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.4.2.RELEASE</version>
-  </parent>
 
   <dependencies>
     <dependency>
@@ -52,24 +55,9 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        <version>${spring.boot.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-cache</artifactId>
-        <version>${spring.boot.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-       <version>${spring.boot.version}</version>
-      </dependency>
 
       <dependency>
-      <groupId>redis.clients</groupId>
+        <groupId>redis.clients</groupId>
         <artifactId>jedis</artifactId>
         <version>${jedis.client.version}</version>
       </dependency>
@@ -86,4 +74,5 @@
       </plugins>
     </pluginManagement>
   </build>
+
 </project>
