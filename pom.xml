@@ -17,7 +17,7 @@
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>CDE Parent</name>
+  <name>CDE PARENT</name>
   <description>This POM contains some global dependency and plugin configurations.</description>
   <url>https://github.com/seedyee/cde-parent</url>
 
