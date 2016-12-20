@@ -64,12 +64,6 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-
-      <dependency>
-        <groupId>redis.clients</groupId>
-        <artifactId>jedis</artifactId>
-        <version>${jedis.client.version}</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
